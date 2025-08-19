@@ -19,15 +19,7 @@ def get_stack_type(volume: int, dimensions: list[int], mass: int) -> str:
 def sort(width: int, height: int, lenght: int, mass: int):
     dimensions = [width, height, lenght]
     volume = math.prod(dimensions)
-
-    stack_type = ""
-
-    try:
-        stack_type = get_stack_type(volume, dimensions, mass)
-    except Exception as err:
-        print(f"Could not get stack type, reason: {err}")
-    
-    return stack_type
+    return get_stack_type(volume, dimensions, mass)
 
 """
 TEST CASES
