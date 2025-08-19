@@ -10,9 +10,6 @@ This repository contains the code of the technical test for thoughtful.ai
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-3. Change direactory to src folder
-   ```bash
-   cd src
-4. Run code
+3. Run code
     ```bash
-    python -m thoughtful_test
+    python -m src.thoughtful_test
