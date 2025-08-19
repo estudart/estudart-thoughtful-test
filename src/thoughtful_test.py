@@ -36,3 +36,9 @@ def sort(width: int, height: int, lenght: int, mass: int) -> str:
         print(f"Could not get stack type, reason: {err}")
 
     return stack_type
+
+print(sort(100, 100, 100, 19))  # SPECIAL
+print(sort(10, 10, 10, 21))     # SPECIAL
+print(sort(200, 1, 1, 10))      # SPECIAL
+print(sort(200, 200, 200, 25))  # REJECTED
+print(sort(10, 10, 10, 10))  # STANDARD
